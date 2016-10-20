@@ -1,0 +1,118 @@
+html,
+body {
+  font-family: "微软雅黑" !important;
+  height: 100%;
+  width: 100%;
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #5f84ea, #7b93f2);
+  background: -moz-linear-gradient(#5f84ea, #7b93f2);
+  background: -o-linear-gradient(#5f84ea, #7b93f2);
+  background: -webkit-gradient(linear, 0 0, 100% 100%, from(#5f84ea), to(#7b93f2));
+  background: linear-gradient(#5f84ea, #7b93f2);
+  /* IE < 10 */
+  /* 注意：这一行必须写在最后 */
+  FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#5f84ea, endColorStr=#7b93f2);
+}
+html,
+body,
+div,
+span,
+p,
+header,
+section,
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0 auto;
+}
+.au-name {
+  margin-top: 80px;
+  text-align: center;
+}
+.au-tab {
+  margin-top: 4rem;
+  width: 600px;
+  height: 380px;
+  border: 1px solid #7b93f2;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px #5f84ea, 10px 0 20px #5f84ea, -20px 0 20px #5f84ea, 0 -20px 20px #5f84ea;
+}
+.au-tab .key-tab {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+.au-tab .key-tab .row button {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  font-size: 3.5rem;
+  border: 1px solid #bcc9f4;
+  color: #ffffff;
+  background: -ms-linear-gradient(top, #5f84ea, #7b93f2);
+  background: -moz-linear-gradient(#5f84ea, #7b93f2);
+  background: -o-linear-gradient(#5f84ea, #7b93f2);
+  background: -webkit-gradient(linear, 0 0, 100% 100%, from(#5f84ea), to(#7b93f2));
+  background: linear-gradient(#5f84ea, #7b93f2);
+  /* IE < 10 */
+  /* 注意：这一行必须写在最后 */
+  FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#5f84ea, endColorStr=#7b93f2);
+}
+.au-tab .key-tab .row button:hover {
+  background: #6987e4;
+}
+.au-tab .key-tab .row button:focus {
+  border: 1px solid red;
+}
+.au-tab .key-tab .row .back-key {
+  font-weight: bold;
+  font-size: 20px;
+}
+.au-tab .key-tab .num {
+  margin-top: 20px;
+}
+.au-tab .input-tab {
+  margin-left: 40px;
+  margin-top: 58px;
+}
+.au-tab .input-tab .titlename {
+  position: relative;
+  color: #4661ad;
+  font-size: 18px;
+}
+.au-tab .input-tab .titlename label {
+  font-weight: 100 !important;
+}
+.au-tab .input-tab .titlename .user-banner {
+  position: absolute;
+  top: 32px;
+  left: 21px;
+}
+.au-tab .input-tab .titlename .pwd-banner {
+  position: absolute;
+  top: 32px;
+  left: 21px;
+}
+.au-tab .input-tab .titlename input {
+  background: #92a9f2;
+  padding-left: 30px;
+  border: none;
+  color: #ffffff;
+}
+.au-tab .input-tab .checkbox {
+  color: #4661ad;
+}
+.au-tab .input-tab .btn {
+  background: #5b7ee4;
+  color: #ffffff;
+  font-size: 18px;
+}
+.au-fax {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #4661ad;
+}

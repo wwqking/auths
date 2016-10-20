@@ -1,0 +1,127 @@
+@bgcolorStar: #5f84ea;
+@bgcolorEnd: #7b93f2;
+@color: #4861ae;
+@fontColor: #ffffff;
+@boderColor: #bcc9f4;
+@boxShadow: #aab8f9;
+@inputColor: #4661ad;
+html,
+body {
+    font-family: "微软雅黑" !important;
+    height: 100%;
+    width: 100%;
+    /* IE 10 */
+    background: -ms-linear-gradient(top, @bgcolorStar, @bgcolorEnd);
+    background: -moz-linear-gradient(@bgcolorStar, @bgcolorEnd);
+    background: -o-linear-gradient(@bgcolorStar, @bgcolorEnd);
+    background: -webkit-gradient(linear, 0 0, 100% 100%, from(@bgcolorStar), to(@bgcolorEnd));
+    background: linear-gradient(@bgcolorStar, @bgcolorEnd);
+    /* IE < 10 */
+    /* 注意：这一行必须写在最后 */
+    FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorStr=@bgcolorStar, endColorStr=@bgcolorEnd);
+}
+html,
+body,
+div,
+span,
+p,
+header,
+section,
+ul,
+li,
+a {
+    padding: 0;
+    margin: 0 auto;
+}
+.au-name {
+    margin-top: 80px;
+    text-align: center;
+}
+.au-tab {
+    margin-top: 4rem;
+    width: 600px;
+    height: 380px;
+    border: 1px solid @bgcolorEnd;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px @bgcolorStar,10px 0 20px @bgcolorStar,-20px 0 20px @bgcolorStar,0 -20px 20px @bgcolorStar;
+    .key-tab {
+        margin-top: 40px;
+        margin-left: 60px;
+        .row {
+            button {
+                cursor: pointer;
+                width: 60px;
+                height: 60px;
+                border-radius: 8px;
+                font-size: 3.5rem;
+                border: 1px solid @boderColor;
+                color: @fontColor;
+                background: -ms-linear-gradient(top, @bgcolorStar, @bgcolorEnd);
+                background: -moz-linear-gradient(@bgcolorStar, @bgcolorEnd);
+                background: -o-linear-gradient(@bgcolorStar, @bgcolorEnd);
+                background: -webkit-gradient(linear, 0 0, 100% 100%, from(@bgcolorStar), to(@bgcolorEnd));
+                background: linear-gradient(@bgcolorStar, @bgcolorEnd);
+                /* IE < 10 */
+                /* 注意：这一行必须写在最后 */
+                FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorStr=@bgcolorStar, endColorStr=@bgcolorEnd);
+                &:hover {
+                    background: #6987e4;
+                }
+                &:focus {
+                    border: 1px solid red;
+                }
+            }
+            .back-key {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .num {
+            margin-top: 20px;
+        }
+    }
+    .input-tab {
+        margin-left: 40px;
+        margin-top: 58px;
+        .titlename {
+            position: relative;
+            color: @inputColor;
+            font-size: 18px;
+            label {
+                font-weight: 100 !important;
+            }
+            .user-banner {
+                position: absolute;
+                top: 32px;
+                left: 21px;
+            }
+            .pwd-banner {
+                position: absolute;
+                top: 32px;
+                left: 21px;
+            }
+            input {
+                background: #92a9f2;
+                padding-left: 30px;
+                border: none;
+                color: @fontColor;
+            }
+        }
+        .checkbox {
+            color: @inputColor;
+        }
+        .btn {
+            background: #5b7ee4;
+            color: @fontColor;
+            font-size: 18px;
+        }
+    }
+}
+.au-fax {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: @inputColor;
+}
