@@ -1,0 +1,114 @@
+html,
+body,
+div,
+span,
+p,
+header,
+section,
+ul,
+li,
+a {
+    padding: 0;
+    margin: 0 auto;
+}
+html,
+body {
+    font-family: "微软雅黑" !important;
+    height: 100%;
+    width: 100%;
+}
+@color:#ffffff;
+header{
+    display: block;
+    height:90px;
+    background:#00a0ea;
+    .auth-logo{
+        position: relative;
+        height: 90px;
+        line-height: 90px;
+        color:@color;
+        font-size: 16px;
+        &:before{
+            position: absolute;
+            content: "";
+            border-right:2px solid @color;
+            height:24px;
+            top:34px;
+            left:66px;
+        }
+        img{
+            cursor: pointer;
+        }
+        .auth-title{
+            margin-left:20px;
+        }
+    }
+    .auth-nav{
+        height: 90px;
+        line-height: 90px;
+        font-size: 16px;
+        ul{
+            list-style: none;
+            li{
+                position: relative;
+                float: left;
+                margin-left: 20px;
+                cursor: pointer;
+                a{
+                    color:@color;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                &:hover{
+                    ul{
+                        display: block;
+                    }
+                }
+                ul{
+                    display: none;
+                    position: absolute;
+                    top:60px;
+                    right:-30px;
+                    width:130px;
+                    border-top:4px solid #000000;
+                    border-bottom:4px solid #000000;
+                    background: #000000;
+                    &:before{
+                        position: absolute;
+                        content: "";
+                        border-right:8px solid transparent;
+                        border-left:8px solid transparent;
+                        border-bottom:8px solid #000000;
+                        top:-11px;
+                        left:55px;
+                    }
+                    li{
+                        display: block;
+                        line-height: 36px;
+                        width:100%;
+                        margin-left:0px;
+                        color:@color;
+                        text-align: center;
+                        &:hover{
+                            background:#009de6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section{
+    margin-top:20px;
+}
+
+#History_example{
+    th{
+        text-align: center;
+    }
+    td{
+        text-align: center;
+    }
+}

@@ -57,7 +57,8 @@ module.exports = function(grunt) {
 		less: {
 			compile: {
 				files: {
-					'css/login.css': 'css/login.less'
+					'css/login.css': 'css/login.less',
+					'css/index.css': 'css/index.less',
 				}
 			},
 		}

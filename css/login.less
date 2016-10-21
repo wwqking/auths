@@ -1,10 +1,24 @@
-@bgcolorStar: #5f84ea;
-@bgcolorEnd: #7b93f2;
-@color: #4861ae;
-@fontColor: #ffffff;
-@boderColor: #bcc9f4;
-@boxShadow: #aab8f9;
-@inputColor: #4661ad;
+//@bgcolorStar: #5f84ea;
+//@bgcolorEnd: #7b93f2;
+//@color: #4861ae;
+//@fontColor: #ffffff;
+//@boderColor: #bcc9f4;
+//@boxShadow: #aab8f9;
+//@inputColor: #4661ad;
+@import (reference) "global.less";
+html,
+body,
+div,
+span,
+p,
+header,
+section,
+ul,
+li,
+a {
+    padding: 0;
+    margin: 0 auto;
+}
 html,
 body {
     font-family: "微软雅黑" !important;
@@ -20,19 +34,15 @@ body {
     /* 注意：这一行必须写在最后 */
     FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorStr=@bgcolorStar, endColorStr=@bgcolorEnd);
 }
-html,
-body,
-div,
-span,
-p,
-header,
-section,
-ul,
-li,
-a {
-    padding: 0;
-    margin: 0 auto;
-}
+
+@bgcolorStar: #5f84ea;
+@bgcolorEnd: #7b93f2;
+@color: #4861ae;
+@fontColor: #ffffff;
+@boderColor: #bcc9f4;
+@boxShadow: #aab8f9;
+@inputColor: #4661ad;
+
 .au-name {
     margin-top: 80px;
     text-align: center;
@@ -68,7 +78,7 @@ a {
                     background: #6987e4;
                 }
                 &:focus {
-                    border: 1px solid red;
+                    border: 1px solid #ead75f;
                 }
             }
             .back-key {

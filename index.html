@@ -1,82 +1,147 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>登录</title>
-		<link rel="stylesheet" href="css/login.css" />
+		<meta charset="UTF-8">
+		<title>首页</title>
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="bower_components/datatables/media/css/dataTables.bootstrap.min.css" />
+		<link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.min.css" />
 	</head>
 	<body>
-		<div class="container">
-			<header class="au-name">
-				<img src="img/banner.png">
-			</header>
-			<section class="au-tab">
-				<div class="tab-body row">
-					<div class="key-tab col-md-5">
-						<div class="row">
-							<div class="col-md-4"><button class="num-btn">1</button></div>
-							<div class="col-md-4"><button class="num-btn">2</button></div>
-							<div class="col-md-4"><button class="num-btn">3</button></div>
-						</div>
-						<div class="row num">
-							<div class="col-md-4"><button class="num-btn">4</button></div>
-							<div class="col-md-4"><button class="num-btn">5</button></div>
-							<div class="col-md-4"><button class="num-btn">6</button></div>
-						</div>
-						<div class="row num">
-							<div class="col-md-4"><button class="num-btn">7</button></div>
-							<div class="col-md-4"><button class="num-btn">8</button></div>
-							<div class="col-md-4"><button class="num-btn">9</button></div>
-						</div>
-						<div class="row num">
-							<div class="col-md-4"><button class="num-btn">.</button></div>
-							<div class="col-md-4"><button class="num-btn">0</button></div>
-							<div class="col-md-4"><button class="num-btn back-key">退格</button></div>
-						</div>
-					</div>
-					<div class="input-tab col-md-5">
-						<div class="row">
-							<div class="form-group col-md-10 titlename">
-							  	<label for="exampleInputEmail1">用户名：</label>
-							    <span class="user-banner"><img src="img/username.png" /></span>
-							    <input type="text" class="form-control" id="username" placeholder="用户名">
-							</div>
-						</div>
-						<div class="row">
-							<div class="form-group col-md-10 titlename">
-							  	<label for="exampleInputEmail1">密码：</label>
-							    <span class="pwd-banner"><img src="img/password.png" /></span>
-							    <input type="password" class="form-control" id="password" placeholder="密码">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-5">
-								<div class="checkbox">
-							        <label>
-							          <input type="checkbox"> 记住密码
-							        </label>
-						        </div>
-							</div>
-							<div class="col-md-6">
-								<div class="checkbox">
-							        <label>
-							          忘记密码?
-							        </label>
-						        </div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-10">
-								<button type="button" class="btn  btn-block">登录</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="au-fax">
-				<small>Copyright © 2010-2016 www.epbiao.com  厦门一品微客网络信息有限公司 版权所有 备案： 闽ICP备12024801号</small>
+		<header>
+			<div class="container">
+				<div class="auth-logo pull-left">
+					<span><img src="img/logo.png"/></span><span class="auth-title">权限系统</span>
+				</div>	
+				<div class="auth-nav pull-right">
+					<ul>
+						<li><a>首页</a></li>
+						<li>
+							<a>菜单管理</a>
+							<ul>
+								<li>树形菜单</li>
+								<li>表格菜单</li>
+								<li>修改菜单</li>
+							</ul>
+						</li>
+						<li><a>用户管理</a>
+							<ul>
+								<li>树形菜单</li>
+								<li>表格菜单</li>
+								<li>修改菜单</li>
+							</ul>
+						</li>
+						<li><a>机构管理</a></li>
+						<li><a>权限管理</a></li>
+					</ul>
+				</div>	
 			</div>
-		</div>
+		</header>
+		<section class="container">
+			<fieldset>
+				<legend>
+					<h4>菜单管理</h4>
+				</legend>
+			</fieldset>
+			<table id="History_example" class="table cell-border" "> 
+		   						 <thead> 
+		    							 <tr> 
+							  				    <th>序号</th> 
+							  				    <th>操作类型</th> 
+							      		        <th>操作员</th> 
+							                    <th>操作时间</th> 
+							                   
+		                                 </tr> 
+		    					</thead> 
+		    					<tbody id="role_mue">
+		    					
+		    						<tr> 
+							  				    <td>1</td> 
+							  				    <td>操作类型</td> 
+							      		        <td>操作员</td> 
+							                    <td>操作时间</td> 
+							                   
+		                              </tr> 
+		                             
+		                             <tr> 
+							  				    <td>1</td> 
+							  				    <td>操作类型</td> 
+							      		        <td>操作员</td> 
+							                    <td>操作时间</td> 
+							                   
+		                              </tr> 
+		                              <tr> 
+							  				    <td>1</td> 
+							  				    <td>操作类型</td> 
+							      		        <td>操作员</td> 
+							                    <td>操作时间</td> 
+							                   
+		                              </tr> 
+		                              <tr> 
+							  				    <td>1</td> 
+							  				    <td>操作类型</td> 
+							      		        <td>操作员</td> 
+							                    <td>操作时间</td> 
+							                   
+		                              </tr> 
+		    					
+		    					
+		    					</tbody> 
+		               </table>
+		</section>
+		
+		
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+		<script src="bower_components/datatables/media/js/dataTables.bootstrap.min.js"></script>
+		
+		<script>
+		$(function(){
+			createDateTables();
+		})
+			// 加载页面自动加载表格接口
+function createDateTables() {
+	// 清空上一次选中的，让刷新时没有选中的元素
+
+	$('#History_example').DataTable({
+		
+		//排序功能
+		bSort: false,
+		// 搜索功能
+		searching : false,
+		// 每页显示数据量
+		bLengthChange : false,
+		// 摧毁前面的dataTables
+		bDestroy : true,
+		// 每页显示三条数据
+		pageLength : 10,
+		language : {
+			"decimal" : "",
+			"emptyTable" : "No data available in table",
+			"info" : "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+			"infoEmpty" : "从 0 到 0/总共 0条",
+			"infoFiltered" : "",
+			"infoPostFix" : "",
+			"thousands" : ",",
+			"lengthMenu" : "显示 _MENU_ 条记录",
+			"loadingRecords" : "加载...",
+			"processing" : "处理...",
+			"search" : "Search:",
+			"zeroRecords" : "未找到匹配记录",
+			"paginate" : {
+				"first" : "首页",
+				"last" : "尾页",
+				"next" : "下一页",
+				"previous" : "上一页"
+			},
+			"aria" : {
+				"sortAscending" : ": activate to sort column ascending",
+				"sortDescending" : ": activate to sort column descending"
+			}
+		},
+	});
+}
+		</script>
 	</body>
 </html>

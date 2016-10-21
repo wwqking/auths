@@ -1,4 +1,17 @@
 html,
+body,
+div,
+span,
+p,
+header,
+section,
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0 auto;
+}
+html,
 body {
   font-family: "微软雅黑" !important;
   height: 100%;
@@ -12,19 +25,6 @@ body {
   /* IE < 10 */
   /* 注意：这一行必须写在最后 */
   FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#5f84ea, endColorStr=#7b93f2);
-}
-html,
-body,
-div,
-span,
-p,
-header,
-section,
-ul,
-li,
-a {
-  padding: 0;
-  margin: 0 auto;
 }
 .au-name {
   margin-top: 80px;
@@ -63,7 +63,7 @@ a {
   background: #6987e4;
 }
 .au-tab .key-tab .row button:focus {
-  border: 1px solid red;
+  border: 1px solid #ead75f;
 }
 .au-tab .key-tab .row .back-key {
   font-weight: bold;
